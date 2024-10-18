@@ -50,3 +50,6 @@
 
 # Ignore yarn integrity file
 yarn-error.log
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
