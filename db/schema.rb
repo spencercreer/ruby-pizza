@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_10_18_125013) do
+ActiveRecord::Schema[7.2].define(version: 2024_10_18_191519) do
   create_table "toppings", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_toppings_on_name", unique: true
   end
 end

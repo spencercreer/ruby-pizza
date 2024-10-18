@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root "toppings#index"
 
-  get "/toppings", to: "toppings#index"
+  resources :toppings
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

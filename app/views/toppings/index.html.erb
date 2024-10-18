@@ -3,7 +3,12 @@
 <ul>
   <% @toppings.each do |topping| %>
     <li>
-      <%= topping.name %>
+      <%= topping.name %><%= link_to "Edit", edit_topping_path(topping) %><%= link_to "Destroy", topping_path(topping), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
     </li>
   <% end %>
 </ul>
+
+<%= link_to "New Topping", new_topping_path %>
