@@ -14,25 +14,23 @@
 
 @layer base {
   h1 {
-    @apply text-3xl font-bold mb-4; /* Default styling for h1 */
+    @apply text-3xl font-bold mb-4;
   }
 
   h2 {
-    @apply text-2xl font-semibold mb-3; /* Default styling for h2 */
+    @apply text-2xl font-semibold mb-3;
   }
 
   p {
-    @apply text-base mb-4; /* Default styling for paragraphs */
+    @apply text-base mb-4;
   }
 
   a {
-    @apply text-blue-600 hover:text-blue-800; /* Default link styling */
+    @apply text-blue-600 hover:text-blue-800;
   }
 
   ul,
   ol {
-    @apply list-disc pl-5; /* Default list styling */
+    @apply list-disc pl-5;
   }
-
-  /* Additional styles as needed */
 }

@@ -1,14 +1,16 @@
-<h1 class="text-red-500 font-bold">Toppings</h1>
-
-<ul>
-  <% @toppings.each do |topping| %>
-    <li>
-      <%= topping.name %><%= link_to "Edit", edit_topping_path(topping) %><%= link_to "Destroy", topping_path(topping), data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
-                  } %>
-    </li>
-  <% end %>
-</ul>
-
-<%= link_to "New Topping", new_topping_path %>
+<div>
+  <div class="flex flex-row w-full justify-between">
+    <h1 class="text-red-500 font-bold text-center w-full">Toppings</h1>
+    <%= link_to "New Topping", new_topping_path %>
+  </div>
+  <ul>
+    <% @toppings.each do |topping| %>
+      <li>
+        <%= topping.name %><%= link_to "Edit", edit_topping_path(topping) %><%= link_to "Destroy", topping_path(topping), data: {
+                      turbo_method: :delete,
+                      turbo_confirm: "Are you sure?"
+                    } %>
+      </li>
+    <% end %>
+  </ul>
+</div>
